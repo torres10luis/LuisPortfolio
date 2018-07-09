@@ -1,0 +1,43 @@
+
+#casa {
+  display: flex;
+  margin: 10px;
+
+}
+  #gal {
+    margin-left: auto;
+    /* align-self: flex-end; */
+  }
+
+img {
+  margin-top: 100px;
+}
+
+  i {
+  font-size: 200px;
+}
+.fa-child {
+  margin-top: 20px;
+  animation: bounce .7s infinite alternate;
+}
+
+p {
+  width:200px;
+  background:lightgray;
+  margin: 100px auto;
+  text-align:center;
+  padding:20px;
+  font-size:1.5em;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-15px);
+  }
+  to {
+    transform: rotateX(15%)
+  }
+}
