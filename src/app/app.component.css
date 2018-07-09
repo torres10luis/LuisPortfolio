@@ -1,4 +1,11 @@
+main {
+  background: url("https://mdbootstrap.com/img/Photos/Others/architecture.jpg")no-repeat center center;
+    background-size: cover;
+}
 
+/* section {
+  background: url(https://previews.123rf.com/images/silamime/silamime1609/silamime160900034/63583443-sky-blue-and-abstract-cloud-white-color-full-and-color-fade-nature-landscape-background-.jpg)
+} */
 #casa {
   display: flex;
   margin: 10px;
@@ -18,7 +25,7 @@ img {
 }
 .fa-child {
   margin-top: 20px;
-  animation: bounce .7s infinite alternate;
+  animation: bounce 2s infinite alternate;
 }
 
 p {
@@ -32,12 +39,9 @@ p {
 
 @keyframes bounce {
   from {
-    transform: translateX(0px);
+    transform: translateY(0px);
   }
   to {
-    transform: translateX(-15px);
-  }
-  to {
-    transform: rotateX(15%)
+    transform: translateY(-15px);
   }
 }
