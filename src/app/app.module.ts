@@ -11,8 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     GalleryComponent
   ],
   imports: [
-    BrowserModule,
-    BrowserAnimationsModule
+    BrowserModule
+    // , BrowserAnimationsModule
 
   ],
   providers: [],

@@ -3,9 +3,10 @@ main {
     background-size: cover;
 }
 
-/* section {
-  background: url(https://previews.123rf.com/images/silamime/silamime1609/silamime160900034/63583443-sky-blue-and-abstract-cloud-white-color-full-and-color-fade-nature-landscape-background-.jpg)
-} */
+#second {
+  background-image: url(../assets/arrows-blur-close-up-163130.jpg);
+}
+
 #casa {
   display: flex;
   margin: 10px;
@@ -26,6 +27,7 @@ img {
 .fa-child {
   margin-top: 20px;
   animation: bounce 2s infinite alternate;
+  text-align: center;
 }
 
 p {
