@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { GalleryComponent } from './gallery/gallery.component';
 import { Component } from '@angular/core';
 
@@ -8,7 +9,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   providers: [GalleryComponent],
-  // animations: [
+  // animations:
   //   trigger('myAwesomeAnimation', [
   //     state('small', style({
   //       transform: 'scale(1)',
@@ -19,22 +20,16 @@ import { Component } from '@angular/core';
   //   transition('small => large', animate('100ms ease-in')),
   //   ]),
 
-  // ]
+  //
 
 })
 export class AppComponent {
   title = 'app';
 
+
   constructor() {
 
   }
-
-  prompts(event) {
-    prompt('You have requested to contact me please enter your email');
-     console.log(event);
-
-  }
-
   // tslint:disable-next-line:no-inferrable-types
   // state: string = 'small';
   // event: Event;
