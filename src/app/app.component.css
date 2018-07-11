@@ -26,7 +26,7 @@ img {
 }
 .fa-child {
   margin-top: 20px;
-  animation: bounce 2s infinite alternate;
+  animation: bounce 1s infinite alternate;
   text-align: center;
 }
 
