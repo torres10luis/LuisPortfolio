@@ -1,41 +1,38 @@
 import { RouterModule } from '@angular/router';
 import { GalleryComponent } from './gallery/gallery.component';
-import { Component } from '@angular/core';
-
-// import {trigger, state, animate, transition, keyframes, style } from '@angular/animations';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [GalleryComponent],
-  // animations:
-  //   trigger('myAwesomeAnimation', [
-  //     state('small', style({
-  //       transform: 'scale(1)',
-  //   })),
-  //   state('large', style({
-  //       transform: 'scale(1.2)',
-  //   })),
-  //   transition('small => large', animate('100ms ease-in')),
-  //   ]),
-
-  //
+  providers: [GalleryComponent]
 
 })
 export class AppComponent {
   title = 'app';
 
+  @Output() featureSelected = new EventEmitter<string>();
 
   constructor() {
 
   }
-  // tslint:disable-next-line:no-inferrable-types
-  // state: string = 'small';
-  // event: Event;
 
-  // animateMe() {
-  //   this.state = (this.state === 'small' ? 'large' : 'small');
+  prompts(event) {
+    const userInput = alert('My email is example@email.com');
+      console.log(userInput);
+   }
+
+   navigate(feature: string) {
+    console.log('set new feature:', feature);
+    this.loadedFeature = feature;
+  }
+
+  selectFeature(feature: string) {
+    this.featureSelected.emit(feature);
+  }
+
+
 }
 
 

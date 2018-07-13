@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,14 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  @Output() featureSelected = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit() {
   }
 
-  prompts(event) {
-    const userInput = alert('My email is example@email.com');
-      console.log(userInput);
-   }
+ 
 
 }
