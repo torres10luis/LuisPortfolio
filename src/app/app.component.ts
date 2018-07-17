@@ -11,14 +11,14 @@ import { Component, Output, EventEmitter } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-
+  loadedFeature: string;
   @Output() featureSelected = new EventEmitter<string>();
 
   constructor() {
 
   }
 
-  prompts(event) {
+   prompts(event) {
     const userInput = alert('My email is example@email.com');
       console.log(userInput);
    }
